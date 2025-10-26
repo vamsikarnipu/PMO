@@ -1,0 +1,64 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m"
+                         xmlns:mdc="sap.ui.mdc"
+                         xmlns:table="sap.ui.mdc.table">
+
+    <VBox class="sapUiSmallMargin">
+        
+        <mdc:Table
+            id="Employees"
+            header="Employees"
+            autoBindOnInit="true"
+            width="100%"
+            p13nMode="Column,Sort,Filter,Group"
+            selectionMode="Multi"
+            delegate='{
+                "name": "project1/delegate/EmployeesTableDelegate",
+                "payload": {
+                    "collectionPath": "Employees"
+                }
+            }'
+            showRowCount="true"
+            threshold="1000"
+            enableExport="true"
+            enableAutoColumnWidth="true"
+            selectionChange="onSelectionChange">
+
+            <mdc:type>
+                <table:ResponsiveTableType />
+            </mdc:type>
+
+            <!-- ✅ Heading and Buttons in actions toolbar -->
+            <mdc:actions>
+                <OverflowToolbar>
+                    <!-- Save and Cancel Buttons -->
+                    <HBox >
+                        <Button
+                            id="saveButton_emp"
+                            text="Save"
+                            type="Accept"
+                            enabled="false"
+                            press="onSaveButtonPress"
+                        />
+                        <Button
+                            id="cancelButton_emp"
+                            text="Cancel"
+                            type="Reject"
+                            enabled="false"
+                            press="onCancelButtonPress"
+                            class="sapUiSmallMarginBegin"
+                        />
+                    </HBox>
+                    <!-- Action Buttons -->
+                    <Button icon="sap-icon://add" id="btnAdd_emp" tooltip="Add" press="onAdd"/>
+                    <Button icon="sap-icon://delete" id="Delete_emp" tooltip="Delete_emp" press="onDeletePress" enabled="false"/>
+                    <Button icon="sap-icon://edit" id="Edit_emp" tooltip="Edit_emp" press="onEditPress" enabled="false"/>
+                </OverflowToolbar>
+            </mdc:actions>
+            <mdc:copyProvider>
+					<plugins.CopyProvider id="copyProvider_emp"/>
+			</mdc:copyProvider>
+
+        </mdc:Table>
+    </VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,63 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m"
+                         xmlns:mdc="sap.ui.mdc"
+                         xmlns:table="sap.ui.mdc.table">
+
+    <VBox class="sapUiSmallMargin">
+
+        <mdc:Table
+            id="ProjectsOverview"
+            header="Projects Overview - Resource Allocation"
+            autoBindOnInit="true"
+            width="100%"
+            p13nMode="Column,Sort,Filter,Group"
+            selectionMode="Multi"
+            delegate='{
+                "name": "project1/delegate/ProjectsOverviewTableDelegate",
+                "payload": {
+                    "collectionPath": "ResourceAllocation"
+                }
+            }'
+            showRowCount="true"
+            threshold="1000"
+            enableExport="true"
+            enableAutoColumnWidth="true"
+            selectionChange="onSelectionChange">
+
+            <mdc:type>
+                <table:ResponsiveTableType />
+            </mdc:type>
+
+            <!-- ✅ Heading and Buttons in actions toolbar -->
+            <mdc:actions>
+                <OverflowToolbar>
+                    <!-- Refresh Button -->
+                    <Button
+                        id="refreshOverviewButton"
+                        text="Refresh"
+                        icon="sap-icon://refresh"
+                        press="onRefreshProjectsOverview"
+                    />
+                    <!-- Export Button -->
+                    <Button
+                        id="exportOverviewButton"
+                        text="Export"
+                        icon="sap-icon://excel-attachment"
+                        press="onExportProjectsOverview"
+                    />
+                    <!-- Filter Button -->
+                    <Button
+                        id="filterOverviewButton"
+                        text="Filter"
+                        icon="sap-icon://filter"
+                        press="onFilterProjectsOverview"
+                    />
+                </OverflowToolbar>
+            </mdc:actions>
+            <mdc:copyProvider>
+					<plugins.CopyProvider id="copyProvider_overview"/>
+			</mdc:copyProvider>
+
+        </mdc:Table>
+    </VBox>
+</core:FragmentDefinition>

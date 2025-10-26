@@ -1,0 +1,64 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m"
+                         xmlns:mdc="sap.ui.mdc"
+                         xmlns:table="sap.ui.mdc.table">
+
+    <VBox class="sapUiSmallMargin">
+
+        <mdc:Table
+            id="Skills"
+            header="Skills"
+            autoBindOnInit="true"
+            width="100%"
+            p13nMode="Column,Sort,Filter,Group"
+            selectionMode="Multi"
+            delegate='{
+                "name": "project1/delegate/SkillsTableDelegate",
+                "payload": {
+                    "collectionPath": "Skills"
+                }
+            }'
+            showRowCount="true"
+            threshold="1000"
+            enableExport="true"
+            enableAutoColumnWidth="true"
+            selectionChange="onSelectionChange">
+
+            <mdc:type>
+                <table:ResponsiveTableType />
+            </mdc:type>
+
+            <!-- ✅ Heading and Buttons in actions toolbar -->
+            <mdc:actions>
+                <OverflowToolbar>
+                    <!-- Save and Cancel Buttons -->
+                    <HBox >
+                        <Button
+                            id="saveButton_skill"
+                            text="Save"
+                            type="Accept"
+                            enabled="false"
+                            press="onSaveButtonPress"
+                        />
+                        <Button
+                            id="cancelButton_skill"
+                            text="Cancel"
+                            type="Reject"
+                            enabled="false"
+                            press="onCancelButtonPress"
+                            class="sapUiSmallMarginBegin"
+                        />
+                    </HBox>
+                    <!-- Action Buttons -->
+                    <Button icon="sap-icon://add" id="btnAdd_skill" tooltip="Add" press="onAdd"/>
+                    <Button icon="sap-icon://delete" id="btnDelete_skill" tooltip="Delete" press="onDeletePress" enabled="false"/>
+                    <Button icon="sap-icon://edit" id="btnEdit_skill" tooltip="Edit" press="onEditPress" enabled="false"/>
+                </OverflowToolbar>
+            </mdc:actions>
+            <mdc:copyProvider>
+					<plugins.CopyProvider id="copyProvider_skill"/>
+			</mdc:copyProvider>
+
+        </mdc:Table>
+    </VBox>
+</core:FragmentDefinition>

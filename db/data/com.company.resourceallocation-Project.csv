@@ -1,0 +1,5 @@
+projectId,tempProjectKey,officialPid,opportunity_oppId,customer_customerId,name,projectType,startDate,endDate,projectManager_ohrId,status
+c50e8400-e29b-41d4-a716-446655440001,TEMP001,,b50e8400-e29b-41d4-a716-446655440001,950e8400-e29b-41d4-a716-446655440001,Patient Analytics Dashboard,Data Analytics,2025-12-01,2026-06-30,PM001,Planned
+c50e8400-e29b-41d4-a716-446655440002,TEMP002,,b50e8400-e29b-41d4-a716-446655440001,950e8400-e29b-41d4-a716-446655440001,Telemedicine Portal,Application Development,2025-12-15,2026-06-30,PM001,Planned
+c50e8400-e29b-41d4-a716-446655440003,TEMP003,,b50e8400-e29b-41d4-a716-446655440002,950e8400-e29b-41d4-a716-446655440002,Core Banking Migration,Cloud Migration,2025-11-15,2026-05-15,PM002,Planned
+c50e8400-e29b-41d4-a716-446655440004,TEMP004,,b50e8400-e29b-41d4-a716-446655440004,950e8400-e29b-41d4-a716-446655440004,E-commerce Analytics,Data Analytics,2025-12-15,2026-08-15,PM001,Planned

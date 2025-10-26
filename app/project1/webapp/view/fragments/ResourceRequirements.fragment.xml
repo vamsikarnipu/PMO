@@ -1,0 +1,72 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m"
+                         xmlns:mdc="sap.ui.mdc"
+                         xmlns:table="sap.ui.mdc.table">
+
+    <VBox class="sapUiSmallMargin">
+
+        <mdc:Table
+            id="ResourceRequirements"
+            header="Resource Requirements"
+            autoBindOnInit="true"
+            width="100%"
+            p13nMode="Column,Sort,Filter,Group"
+            selectionMode="Multi"
+            delegate='{
+                "name": "project1/delegate/ResourceRequirementsTableDelegate",
+                "payload": {
+                    "collectionPath": "ProjectRequirements"
+                }
+            }'
+            showRowCount="true"
+            threshold="1000"
+            enableExport="true"
+            enableAutoColumnWidth="true"
+            selectionChange="onSelectionChange">
+
+            <mdc:type>
+                <table:ResponsiveTableType />
+            </mdc:type>
+
+            <!-- ✅ Heading and Buttons in actions toolbar -->
+            <mdc:actions>
+                <OverflowToolbar>
+                    <!-- Save and Cancel Buttons -->
+                    <HBox >
+                        <Button
+                            id="saveButton_req"
+                            text="Save"
+                            type="Accept"
+                            enabled="false"
+                            press="onSaveButtonPress"
+                        />
+                        <Button
+                            id="cancelButton_req"
+                            text="Cancel"
+                            type="Reject"
+                            enabled="false"
+                            press="onCancelButtonPress"
+                            class="sapUiSmallMarginBegin"
+                        />
+                    </HBox>
+                    <!-- Action Buttons -->
+                    <Button icon="sap-icon://add" id="btnAdd_req" tooltip="Add" press="onAdd"/>
+                    <Button icon="sap-icon://delete" id="btnDelete_req" tooltip="Delete" press="onDeletePress" enabled="false"/>
+                    <Button icon="sap-icon://edit" id="btnEdit_req" tooltip="Edit" press="onEditPress" enabled="false"/>
+                    <!-- Find Resources Button -->
+                    <Button 
+                        icon="sap-icon://search" 
+                        id="btnFindResources" 
+                        tooltip="Find Matching Resources" 
+                        press="onFindResources"
+                        type="Emphasized"
+                    />
+                </OverflowToolbar>
+            </mdc:actions>
+            <mdc:copyProvider>
+					<plugins.CopyProvider id="copyProvider_req"/>
+			</mdc:copyProvider>
+
+        </mdc:Table>
+    </VBox>
+</core:FragmentDefinition>

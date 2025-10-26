@@ -1,0 +1,36 @@
+skillId,skillName,category,description
+850e8400-e29b-41d4-a716-446655440001,Python,Technical,Python programming language
+850e8400-e29b-41d4-a716-446655440002,Java,Technical,Java programming language
+850e8400-e29b-41d4-a716-446655440003,JavaScript,Technical,JavaScript programming language
+850e8400-e29b-41d4-a716-446655440004,TypeScript,Technical,TypeScript programming language
+850e8400-e29b-41d4-a716-446655440005,SQL,Technical,SQL database querying
+850e8400-e29b-41d4-a716-446655440006,NoSQL,Technical,NoSQL databases
+850e8400-e29b-41d4-a716-446655440007,Machine Learning,Technical,Machine Learning and AI
+850e8400-e29b-41d4-a716-446655440008,Deep Learning,Technical,Deep Learning and Neural Networks
+850e8400-e29b-41d4-a716-446655440009,Data Science,Technical,Data Science and Analytics
+850e8400-e29b-41d4-a716-446655440010,PowerBI,Technical,PowerBI data visualization
+850e8400-e29b-41d4-a716-446655440011,Tableau,Technical,Tableau data visualization
+850e8400-e29b-41d4-a716-446655440012,AWS,Technical,Amazon Web Services
+850e8400-e29b-41d4-a716-446655440013,Azure,Technical,Microsoft Azure
+850e8400-e29b-41d4-a716-446655440014,GCP,Technical,Google Cloud Platform
+850e8400-e29b-41d4-a716-446655440015,Docker,Technical,Docker containerization
+850e8400-e29b-41d4-a716-446655440016,Kubernetes,Technical,Kubernetes orchestration
+850e8400-e29b-41d4-a716-446655440017,React,Technical,React JavaScript framework
+850e8400-e29b-41d4-a716-446655440018,Angular,Technical,Angular JavaScript framework
+850e8400-e29b-41d4-a716-446655440019,Vue,Technical,Vue JavaScript framework
+850e8400-e29b-41d4-a716-446655440020,Node.js,Technical,Node.js runtime
+850e8400-e29b-41d4-a716-446655440021,SAP ABAP,Technical,SAP ABAP programming
+850e8400-e29b-41d4-a716-446655440022,SAP Fiori,Technical,SAP Fiori UI development
+850e8400-e29b-41d4-a716-446655440023,SAP HANA,Technical,SAP HANA database
+850e8400-e29b-41d4-a716-446655440024,SAP BTP,Technical,SAP Business Technology Platform
+850e8400-e29b-41d4-a716-446655440025,Salesforce,Technical,Salesforce CRM
+850e8400-e29b-41d4-a716-446655440026,ETL,Technical,ETL data processing
+850e8400-e29b-41d4-a716-446655440027,DevOps,Technical,DevOps practices
+850e8400-e29b-41d4-a716-446655440028,CI/CD,Technical,Continuous Integration and Deployment
+850e8400-e29b-41d4-a716-446655440029,Agile,Functional,Agile methodology
+850e8400-e29b-41d4-a716-446655440030,Scrum,Functional,Scrum framework
+850e8400-e29b-41d4-a716-446655440031,Communication,Soft Skill,Communication skills
+850e8400-e29b-41d4-a716-446655440032,Leadership,Soft Skill,Leadership skills
+850e8400-e29b-41d4-a716-446655440033,Problem Solving,Soft Skill,Problem solving abilities
+850e8400-e29b-41d4-a716-446655440034,Team Collaboration,Soft Skill,Team collaboration skills
+850e8400-e29b-41d4-a716-446655440035,Project Management,Functional,Project management skills

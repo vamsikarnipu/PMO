@@ -1,0 +1,6 @@
+businessTypeId,typeName,description
+750e8400-e29b-41d4-a716-446655440001,New Business,New customer acquisition
+750e8400-e29b-41d4-a716-446655440002,Renewal,Existing customer renewal
+750e8400-e29b-41d4-a716-446655440003,Expansion,Expansion with existing customer
+750e8400-e29b-41d4-a716-446655440004,Upsell,Upselling to existing customer
+750e8400-e29b-41d4-a716-446655440005,Cross-sell,Cross-selling to existing customer

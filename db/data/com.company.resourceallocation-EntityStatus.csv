@@ -1,0 +1,5 @@
+statusId,name,description
+BENCH,Bench,Employee available or assigned but project not started
+PRE_ALLOCATED,Pre-Allocated,Working on temp project without official PID
+ALLOCATED,Allocated,Working on project with official PID
+RESIGNED,Resigned,No longer with company

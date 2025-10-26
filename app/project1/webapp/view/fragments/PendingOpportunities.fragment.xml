@@ -1,0 +1,63 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m"
+                         xmlns:mdc="sap.ui.mdc"
+                         xmlns:table="sap.ui.mdc.table">
+
+    <VBox class="sapUiSmallMargin">
+
+        <mdc:Table
+            id="PendingOpportunities"
+            header="Pending Opportunities Report"
+            autoBindOnInit="true"
+            width="100%"
+            p13nMode="Column,Sort,Filter,Group"
+            selectionMode="Multi"
+            delegate='{
+                "name": "project1/delegate/PendingOpportunitiesTableDelegate",
+                "payload": {
+                    "collectionPath": "Opportunities"
+                }
+            }'
+            showRowCount="true"
+            threshold="1000"
+            enableExport="true"
+            enableAutoColumnWidth="true"
+            selectionChange="onSelectionChange">
+
+            <mdc:type>
+                <table:ResponsiveTableType />
+            </mdc:type>
+
+            <!-- ✅ Heading and Buttons in actions toolbar -->
+            <mdc:actions>
+                <OverflowToolbar>
+                    <!-- Refresh Button -->
+                    <Button
+                        id="refreshOppButton"
+                        text="Refresh"
+                        icon="sap-icon://refresh"
+                        press="onRefreshPendingOpportunities"
+                    />
+                    <!-- Export Button -->
+                    <Button
+                        id="exportOppButton"
+                        text="Export"
+                        icon="sap-icon://excel-attachment"
+                        press="onExportPendingOpportunities"
+                    />
+                    <!-- Filter Button -->
+                    <Button
+                        id="filterOppButton"
+                        text="Filter"
+                        icon="sap-icon://filter"
+                        press="onFilterPendingOpportunities"
+                    />
+                </OverflowToolbar>
+            </mdc:actions>
+            <mdc:copyProvider>
+					<plugins.CopyProvider id="copyProvider_opp"/>
+			</mdc:copyProvider>
+
+        </mdc:Table>
+    </VBox>
+</core:FragmentDefinition>

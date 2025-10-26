@@ -1,0 +1,11 @@
+customerId,custName,city,country,status,vertical_verticalId,contactPerson,email,phone
+950e8400-e29b-41d4-a716-446655440001,ACME Healthcare Corp,Boston,USA,A,550e8400-e29b-41d4-a716-446655440001,John Smith,john.smith@acmehealthcare.com,+1-617-555-0101
+950e8400-e29b-41d4-a716-446655440002,Global Finance Bank,New York,USA,A,550e8400-e29b-41d4-a716-446655440002,Sarah Johnson,sarah.j@globalfinance.com,+1-212-555-0202
+950e8400-e29b-41d4-a716-446655440003,TechCorp Solutions,San Francisco,USA,A,550e8400-e29b-41d4-a716-446655440003,Mike Chen,mike.chen@techcorp.com,+1-415-555-0303
+950e8400-e29b-41d4-a716-446655440004,Retail Giants Inc,Chicago,USA,A,550e8400-e29b-41d4-a716-446655440004,Emily Davis,emily.d@retailgiants.com,+1-312-555-0404
+950e8400-e29b-41d4-a716-446655440005,Manufacturing Plus,Detroit,USA,A,550e8400-e29b-41d4-a716-446655440005,Robert Wilson,rob.wilson@mfgplus.com,+1-313-555-0505
+950e8400-e29b-41d4-a716-446655440006,Telecom Networks,Seattle,USA,A,550e8400-e29b-41d4-a716-446655440006,Lisa Brown,lisa.b@telecom.com,+1-206-555-0606
+950e8400-e29b-41d4-a716-446655440007,Energy Solutions Ltd,Houston,USA,P,550e8400-e29b-41d4-a716-446655440007,David Martinez,david.m@energysol.com,+1-713-555-0707
+950e8400-e29b-41d4-a716-446655440008,Government Services,Washington DC,USA,A,550e8400-e29b-41d4-a716-446655440008,Jennifer Taylor,jen.taylor@govsvc.gov,+1-202-555-0808
+950e8400-e29b-41d4-a716-446655440009,Education Alliance,Austin,USA,P,550e8400-e29b-41d4-a716-446655440009,Michael Anderson,m.anderson@edualliance.edu,+1-512-555-0909
+950e8400-e29b-41d4-a716-446655440010,Insurance Corp,Boston,USA,A,550e8400-e29b-41d4-a716-446655440002,Amanda White,a.white@inscorp.com,+1-617-555-1010

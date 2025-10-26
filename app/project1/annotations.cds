@@ -1,0 +1,1 @@
+using ResourceAllocationService as service from '../../srv/service';
