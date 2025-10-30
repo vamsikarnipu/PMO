@@ -35,29 +35,7 @@ modules:
     requires:
       - name: Backend-db
 
-  - name: Backend
-    type: approuter.nodejs
-    path: app/router
-    parameters:
-      keep-existing-routes: true
-      disk-quota: 256M
-      memory: 256M
-    requires:
-      - name: srv-api
-        group: destinations
-        properties:
-          name: srv-api # must be used in xs-app.json as well
-          url: ~{srv-url}
-          forwardAuthToken: true
-      - name: Backend-auth
-      - name: Backend-destination
-      - name: Backend-html5-runtime
-      - name: ui5
-    provides:
-      - name: app-api
-        properties:
-          app-protocol: ${protocol}
-          app-uri: ${default-uri}
+  # Managed Router (Work Zone) - no standalone approuter module
 
   - name: Backend-app-content
     type: com.sap.application.content
@@ -66,6 +44,12 @@ modules:
       - name: Backend-html5-host
         parameters:
           content-target: true
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api
+          url: ~{srv-url}
+          forwardAuthToken: true
     build-parameters:
       build-result: dist
       requires:
@@ -85,38 +69,15 @@ resources:
       service: xsuaa
       service-plan: application
       path: ./xs-security.json
-      config:
-        xsappname: Backend-${org}-${space}
-        tenant-mode: dedicated
-        oauth2-configuration:
-          redirect-uris:
-            - https://*~{app-api/app-uri}/**
-    requires:
-      - name: app-api
   - name: Backend-db
     type: com.sap.xs.hdi-container
     parameters:
       service: hana
       service-plan: hdi-shared
-  - name: Backend-destination
-    type: org.cloudfoundry.managed-service
-    parameters:
-      service: destination
-      service-plan: lite
+  # Destination service not required for Managed Router basic setup
   - name: Backend-html5-host
     type: org.cloudfoundry.managed-service
     parameters:
       service: html5-apps-repo
       service-plan: app-host
-  - name: Backend-html5-runtime
-    type: org.cloudfoundry.managed-service
-    parameters:
-      service: html5-apps-repo
-      service-plan: app-runtime
-  - name: ui5
-    type: configuration
-    parameters:
-      type: destination
-      name: ui5
-      url: https://ui5.sap.com
-      Authentication: NoAuthentication
+  # No html5 runtime or UI5 destination needed with Managed Router
