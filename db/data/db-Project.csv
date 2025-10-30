@@ -1,23 +1,26 @@
-sapPId,sfdcPId,name,startDate,endDate,pmo,oppId
-
-1,SFDC_PROJ_1,Project_1,2025-02-06,2025-08-06,Bob,1
-
-2,SFDC_PROJ_2,Project_2,2025-02-11,2025-08-11,Alice,2
-
-3,SFDC_PROJ_3,Project_3,2025-02-16,2025-08-16,Bob,3
-
-4,SFDC_PROJ_4,Project_4,2025-02-21,2025-08-21,Charlie,4
-
-5,SFDC_PROJ_5,Project_5,2025-02-26,2025-08-26,Alice,5
-
-6,SFDC_PROJ_6,Project_6,2025-03-03,2025-08-31,Bob,6
-
-7,SFDC_PROJ_7,Project_7,2025-03-08,2025-09-05,Bob,7
-
-8,SFDC_PROJ_8,Project_8,2025-03-13,2025-09-10,Alice,8
-
-9,SFDC_PROJ_9,Project_9,2025-03-18,2025-09-15,Charlie,9
-
-10,SFDC_PROJ_10,Project_10,2025-03-23,2025-09-20,Bob,10
-
- 
+sapPId,sfdcPId,projectName,startDate,endDate,gpm,projectType,oppId,status
+proj-0001,91697538,BAAN Transformation and Modernisation to Pmax,2024-12-01,2026-04-15,Sridhar Rao,Fixed Price,246921,Planned
+proj-0002,91697416,BAAN Transformation and Modernisation to Pmax - Contingency,2024-12-01,2026-04-15,Sridhar Rao,Fixed Price,246921,Planned
+proj-0003,91697415,BAAN Transformation and Modernisation to Pmax - Smartshop,2024-12-01,2026-04-15,Sridhar Rao,Fixed Price,246921,Planned
+proj-0004,91674805,GE Vernova AMS - Megatech Data & Analytics,2024-01-01,2028-12-31,PVVenkat,Transaction Based,214544,Planned
+proj-0005,91674804,GE Vernova AMS - Megatech ERP,2024-01-01,2028-12-31,PVVenkat,Transaction Based,214544,Planned
+proj-0006,91684853,912866-Gas Power - ERP Program Services - Fixed Monthly,2024-06-01,2029-05-31,K N Sathisha,Transaction Based,239493,Planned
+proj-0007,91702243,924018 -Steam ERP Program - CI,2025-02-01,2025-12-31,Anil Tarmani,Transaction Based,251522,Planned
+proj-0008,91679364,910160-BW HANA Finance Analytics,2024-02-01,2025-12-31,Shiva Koneru,Fixed Monthly,232749,Planned
+proj-0009,91690930,Steam BW Carve Out - Pass Thru,2024-12-15,2025-11-14,Shiva Koneru,Pass Thru,245607,Planned
+proj-0010,91675364,GE Gas Power - Data Conversion 2024-25,2024-01-01,2025-12-31,Dharma A,Transaction Based,230302,Planned
+proj-0011,91695019,OFS Tooling Site to Site Process Enhancements,2024-11-11,2025-12-31,Pallavi S,Fixed Price,248138,Planned
+proj-0012,91697535,TMLA LE Name Change,2024-12-01,2025-12-31,Srinivas Pemireddy,Fixed Price,248137,Planned
+proj-0013,91695848,TMLA LE Name Change - Contingency,2024-12-01,2025-12-31,Srinivas Pemireddy,Fixed Price,248137,Planned
+proj-0014,91697649,923557-SSS to CCL Exit,2024-12-01,2025-12-31,Jeevan Karu,Fixed Monthly,250656,Planned
+proj-0015,91702781,Ariba Rollouts for 2025,2025-01-01,2025-12-31,Jeevan Karu,Fixed Monthly,251523,Planned
+proj-0016,91708142,MRO Project (Plant Maintenance),2025-03-01,2025-12-31,Pallavi S,Fixed Price,252016,Planned
+proj-0017,91697405,BAAN transformation and Modernization to Pmax-Divine,2024-12-01,2026-04-15,Munender M,Divine,246921,Planned
+proj-0018,91697404,BAAN transformation and Modernization to Pmax-Divine-Contingency,2024-12-01,2026-04-15,Munender M,Divine,246921,Planned
+proj-0019,91697166,923317_TMLA LE Name change-Apex,2024-12-01,2025-12-31,Munender M,Fixed Price,248137,Planned
+proj-0020,91697165,923316_TMLA LE Name change-Apex Contingency,2024-12-01,2025-12-31,Munender M,Fixed Price,248137,Planned
+proj-0021,91705876,923414_TMLA LE Name change-ARIBA Efforts,2025-01-01,2025-12-31,Jeevan Karu,Fixed Price,250350,Planned
+proj-0022,91703699,Ariba P2O/Guided Buying & Ariba Network Rollouts for Gas Power- Passthru,2025-04-01,2025-12-31,Jeevan Karu,Pass Thru,251523,Planned
+proj-0023,91695349,GE Grid GRC Solution Architect,2024-11-01,2025-10-31,Surojeet Sengupta,Fixed Monthly,244224,Planned
+proj-0024,91708277,OFS Tooling Sourcing Optimization,2025-04-01,2026-01-31,Pallavi S,Fixed Price,251587,Planned
+proj-0025,91711693,OFS Tooling Logistics Optimization - OTM Integration,2025-05-15,2025-11-07,Pallavi S,Fixed Price,257557,Planned

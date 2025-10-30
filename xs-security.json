@@ -1,6 +1,15 @@
 {
-  "scopes": [],
-  "attributes": [],
-  "role-templates": [],
+  "xsappname": "Backend-${space}",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    { "name": "$XSAPPNAME.User", "description": "Default user scope" }
+  ],
+  "role-templates": [
+    {
+      "name": "User",
+      "description": "Default role",
+      "scope-references": ["$XSAPPNAME.User"]
+    }
+  ],
   "authorities-inheritance": false
 }

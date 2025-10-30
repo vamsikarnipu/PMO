@@ -1,0 +1,14 @@
+/* Enter your custom styles here */
+.show-less .sapMListTblSubCnt{
+    display: none !important;
+}
+/* Adds vertical lines between columns and horizontal row dividers */
+.verticalsTable .sapMListTblCell {
+  border-right: 2px solid var(--sapList_BorderColor);
+}
+
+
+/* Optional: remove the last border on the far right for a cleaner look */
+.verticalsTable .sapMListTblCell:last-child {
+  border-right: none;
+}

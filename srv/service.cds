@@ -6,6 +6,6 @@ service MyService {
   entity Projects      as projection on db.Project;
   entity Employees     as projection on db.Employee;
   entity Demands       as projection on db.Demand;
-  entity SAPIdStatuses as projection on db.SapIdStatus;
+  
   entity Verticals     as projection on db.Vertical;
 }
