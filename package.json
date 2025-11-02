@@ -4,7 +4,7 @@
   "description": "A simple CAP project.",
   "dependencies": {
     "@cap-js/hana": "^2",
-    "@sap/cds": "^9",
+    "@sap/cds": "^9.4.4",
     "@sap/xssec": "^4",
     "express": "^4"
   },
@@ -12,8 +12,8 @@
     "@cap-js/sqlite": "^2",
     "@sap/cds-dk": "^9",
     "cds-plugin-ui5": "^0.13.0",
-    "rimraf": "^5.0.5",
-    "mbt": "^1.2.29"
+    "mbt": "^1.2.29",
+    "rimraf": "^5.0.5"
   },
   "scripts": {
     "start": "cds-serve",
@@ -26,11 +26,25 @@
   "private": true,
   "cds": {
     "requires": {
+      "odata": {
+        "version": "v4",
+        "inlineAnnotations": [
+          "@Common.Label"
+        ]
+      },
       "db": {
-        "kind": "sqlite"
+        "kind": "sqlite",
+        "model": [
+          "db"
+        ]
       },
       "[production]": {
-        "auth": "xsuaa"
+        "db": {
+          "kind": "hana"
+        },
+        "auth": {
+          "kind": "mocked"
+        }
       }
     }
   },

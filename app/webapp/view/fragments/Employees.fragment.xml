@@ -1,0 +1,64 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+                         xmlns="sap.m"
+                         xmlns:f="sap.f"
+                         xmlns:mdc="sap.ui.mdc"
+                         xmlns:mdct="sap.ui.mdc.table">
+            <VBox class="sapUiSmallMargin">
+                <mdc:Table
+                    id="Employees"
+                    header="Employees"
+                    class="verticalsTable rowDetailToggleTable"
+                    autoBindOnInit="false"
+                    busyIndicatorDelay="0"
+                    width="100%"
+                    p13nMode="Column,Sort,Filter,Group"
+                    selectionMode="Multi"
+                    delegate='{
+                        "name": "project2/delegate/EmployeesTableDelegate",
+                        "payload": {
+                            "collectionPath": "Employees"
+                        }
+                    }'
+                    showRowCount="true"
+                    threshold="25"
+                    enableExport="true"
+                    enableAutoColumnWidth="false"
+                    filter="employeeFilterBar"
+                    filterConditions="{filterModel>/conditions}"
+                    selectionChange="onSelectionChange">
+
+                    <mdc:type>
+                        <mdct:ResponsiveTableType />
+                    </mdc:type>
+
+                    <mdc:actions>
+                        <OverflowToolbar>
+                            <HBox>
+                                <Button id="saveButton_emp" text="Save" type="Accept" enabled="false" press="onSaveButtonPress" />
+                                <Button id="cancelButton_emp" text="Cancel" type="Reject" enabled="false" press="onCancelButtonPress" class="sapUiSmallMarginBegin" />
+                            </HBox>
+                             <SegmentedButton 
+                                             selectedKey="less"
+                                             selectionChange="onToggleRowDetail"
+                                             tooltip="Toggle Row Details">
+                                <items>
+                                    <SegmentedButtonItem key="more"
+                                                         icon="sap-icon://detail-more"
+                                                         tooltip="Show More"/>
+                                    <SegmentedButtonItem key="less"
+                                                         icon="sap-icon://detail-less"
+                                                         tooltip="Show Less"/>
+                                </items>
+                            </SegmentedButton>
+                            <Button icon="sap-icon://add" id="btnAdd_emp" tooltip="Add" press="onAdd" />
+                            <Button icon="sap-icon://delete" id="Delete_emp" tooltip="Delete" press="onDeletePress" enabled="false" />
+                            <Button icon="sap-icon://edit" id="Edit_emp" tooltip="Edit" press="onEditPress" enabled="false" />
+                        </OverflowToolbar>
+                    </mdc:actions>
+
+                    <mdc:copyProvider>
+                        <!-- <plugins:CopyProvider id="copyProvider_emp" /> -->
+                    </mdc:copyProvider>
+                </mdc:Table>
+            </VBox>
+</core:FragmentDefinition>

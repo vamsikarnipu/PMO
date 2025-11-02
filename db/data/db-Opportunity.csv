@@ -1,23 +1,8 @@
-sapOpportunityId,sfdcOpportunityId,probability,salesSPOC,deliverySPOC,expectedStart,expectedEnd,customerId,createdAt,createdBy,modifiedAt,modifiedBy
-
-1,SFDC_OPP_1000,0%,sales_0@example.com,delivery_0@example.com,2025-11-01,2026-01-01,1,2025-10-01 10:00:00,creator_0,2025-10-15 15:00:00,modifier_0
-
-2,SFDC_OPP_1001,33%,sales_1@example.com,delivery_1@example.com,2025-11-02,2026-01-02,2,2025-10-02 10:00:00,creator_1,2025-10-16 15:00:00,modifier_1
-
-3,SFDC_OPP_1002,85%,sales_2@example.com,delivery_2@example.com,2025-11-03,2026-01-03,3,2025-10-03 10:00:00,creator_2,2025-10-17 15:00:00,modifier_2
-
-4,SFDC_OPP_1003,100%,sales_3@example.com,delivery_3@example.com,2025-11-04,2026-01-04,4,2025-10-04 10:00:00,creator_3,2025-10-18 15:00:00,modifier_3
-
-5,SFDC_OPP_1004,0%,sales_4@example.com,delivery_4@example.com,2025-11-05,2026-01-05,5,2025-10-05 10:00:00,creator_4,2025-10-19 15:00:00,modifier_4
-
-6,SFDC_OPP_1005,33%,sales_5@example.com,delivery_5@example.com,2025-11-06,2026-01-06,6,2025-10-06 10:00:00,creator_5,2025-10-20 15:00:00,modifier_5
-
-7,SFDC_OPP_1006,85%,sales_6@example.com,delivery_6@example.com,2025-11-07,2026-01-07,7,2025-10-07 10:00:00,creator_6,2025-10-21 15:00:00,modifier_6
-
-8,SFDC_OPP_1007,100%,sales_7@example.com,delivery_7@example.com,2025-11-08,2026-01-08,8,2025-10-08 10:00:00,creator_7,2025-10-22 15:00:00,modifier_7
-
-9,SFDC_OPP_1008,0%,sales_8@example.com,delivery_8@example.com,2025-11-09,2026-01-09,9,2025-10-09 10:00:00,creator_8,2025-10-23 15:00:00,modifier_8
-
-10,SFDC_OPP_1009,33%,sales_9@example.com,delivery_9@example.com,2025-11-10,2026-01-10,10,2025-10-10 10:00:00,creator_9,2025-10-24 15:00:00,modifier_9
-
- 
+sapOpportunityId,sfdcOpportunityId,opportunityName,businessUnit,probability,salesSPOC,deliverySPOC,expectedStart,expectedEnd,tcv,Stage,customerId
+O-0001,Opp-236882,GE Grid SAP Programs,GEV Electirifcation-Grid,PurchaseOrderReceived,Neehit Mittal,Mithilesh Methuku,2024-04-01,2027-03-30,0.00,Signed Deal,1
+O-0002,Opp-251522,Steam ERP Program - CI,GEV Gas Power-Projects,PurchaseOrderReceived,Neehit Mittal,Radhika Tanikella,2025-02-01,2025-12-31,0.00,Signed Deal,1
+O-0003,Opp-250075,GEHC_Global_NGP_Kinaxis_SAP Configuration RFP,GE HealthCare,PurchaseOrderReceived,Neehit Mittal,Ravi Kolachina,2025-02-03,2025-12-31,0.00,Signed Deal,1
+O-0004,Opp-271687,China Archived AWS Server migration,GE Power Conversion,SoWSent,Neehit Mittal,Naveen Chiluveru,2025-09-15,2025-10-15,0.00,Down Select,1
+O-0005,Opp ID yet to be created,PIPO - Functionality Extensions,GEV Electirifcation-Grid,SoWSent,Neehit Mittal,Mithilesh Methuku,2025-01-10,2025-11-30,0.00,Discover,1
+O-0006,Opp-272930,SAP Solution Architect FICO,GE Power Conversion,SoWSent,Neehit Mittal,Naveen Chiluveru,2025-01-10,2026-09-30,0.00,On Bid,1
+O-0007,Opp ID yet to be created,GE Power SOW-AP6506-Controls SAP-UAE PS06,GE Power Gas,ProposalStage,Neehit Mittal,Arn K Reddy,2025-10-20,2026-01-19,0.00,Define,1
